@@ -5,7 +5,7 @@ defmodule Rocketpay.NumbersTest do
  describe "sum_from_file/1" do
     filename = ""
     exp = {:error, %{message: "Invalid file!"}}
-    assert Numbers.sum_from_file("") == exp
+    assert Numbers.sum_from_file(filename) == exp
     
 end
 
