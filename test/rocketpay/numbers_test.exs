@@ -19,10 +19,10 @@ describe "sum_from_file/1 a" do
     end 
     
     test "when there is no file with given name, returns an error" do
-        filename = ""
+        filename = nil
         response = {:error, %{message: "Invalid file!"}}
         
-        assert Numbers.sum_from_file(nil) == response
+        assert Numbers.sum_from_file(filename) == response
     end 
     
 end
